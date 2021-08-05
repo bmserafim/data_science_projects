@@ -42,7 +42,6 @@ def get_converted_damages(lst):
 updated_damages = get_converted_damages(damages)
 #print(updated_damages)
 
-# write your construct hurricane dictionary function here:
 # creating a dictionary with all hurricanes, and their respective data
 def get_hurricanes_dict():
 
@@ -59,9 +58,10 @@ def get_hurricanes_dict():
 hurricanes_dict = get_hurricanes_dict()
 #print(hurricanes_dict)
 
-# write your construct hurricane by year dictionary function here:
+# creating a dictionary with hurricanes organized by year:
 def get_year_dict():
-#creating a list with all years (unique values) in which a hurricane was spotted
+  
+# creating a list with all years (unique values) in which a hurricane was spotted
   years_lst = []
   for (item) in hurricanes_dict.values():
     year = item["Year"]
@@ -83,7 +83,6 @@ def get_year_dict():
 hurricanes_by_year = get_year_dict()
 #print(hurricanes_by_year)
 
-# write your count affected areas function here:
 # creating a dictionary with number of times that each area was affected
 def get_times_by_areas_dict():
 
@@ -99,7 +98,6 @@ def get_times_by_areas_dict():
 hurricanes_by_area = get_times_by_areas_dict()
 #print(hurricanes_by_area)
 
-# write your find most affected area function here:
 #creating a function that finds the most affected area, with the number of times hit by a hurricane
 def get_most_affected():
 
@@ -113,7 +111,6 @@ def get_most_affected():
 most_area, times_hit = get_most_affected()
 #print("The area most affected by hurricanes was {}, with {} hits".format(most_area, times_hit))
 
-# write your greatest number of deaths function here:
 #creating a dictionary with hurricanes and the respective deaths caused, then finding the deadliest one
 def get_deadliest_hurricane():
 
@@ -128,7 +125,6 @@ def get_deadliest_hurricane():
 deadliest_hurricane, deaths, sort_hurricanes_by_deaths = get_deadliest_hurricane()
 #print("{} was the deadliest hurricane, with {} casualties.". format(deadliest_hurricane, deaths))
 
-# write your categorize by mortality function here:
 #creating a dictionary with hurricanes organized by mortality scale
 def get_hurricanes_by_mortality():
 
@@ -152,7 +148,6 @@ def get_hurricanes_by_mortality():
 mortality_ranking = get_hurricanes_by_mortality()
 #print(mortality_ranking)
 
-# write your greatest damage function here:
 # finding the hurricane that caused the greatest damage
 def get_greatest_damage():
 
@@ -173,7 +168,6 @@ def get_greatest_damage():
 greatest_damage_hurricane = get_greatest_damage()
 #print("Hurricane {} caused the greatest damage.".format(greatest_damage_hurricane))
 
-# write your categorize by damage function here:
 #creating a dictionary with hurricanes organized by damage scale
 def get_hurricanes_by_damage():
 

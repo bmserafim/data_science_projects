@@ -46,12 +46,12 @@ updated_damages = get_converted_damages(damages)
 def get_hurricanes_dict():
 
   hurricanes_dict = {names[i]: {"Name": names[i],
-                          "Month": months[i],
-                          "Year": years[i],
-                          "Max Sustained Wind": max_sustained_winds[i],
-                          "Areas Affected": areas_affected[i],
-                          "Damage": updated_damages[i],
-                          "Deaths": deaths[i]} for i in range(len(names))}
+                                "Month": months[i],
+                                "Year": years[i],
+                                "Max Sustained Wind": max_sustained_winds[i],
+                                "Areas Affected": areas_affected[i],
+                                "Damage": updated_damages[i],
+                                "Deaths": deaths[i]} for i in range(len(names))}
 
   return hurricanes_dict
 
@@ -63,9 +63,11 @@ def get_year_dict():
   
 # creating a list with all years (unique values) in which a hurricane was spotted
   years_lst = []
+  
   for (item) in hurricanes_dict.values():
     year = item["Year"]
     years_lst.append(year)
+    
   years_lst = list(dict.fromkeys(years_lst))
 
 #converting the original dict to one with years as keys
